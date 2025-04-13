@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { laptops } from "@/data/laptops";
 import LaptopCard from "@/components/LaptopCard";
 import Header from "@/components/Header";
+import { Search, BarChart2, MessageSquare } from "lucide-react";
 
 export function Home() {
   const featuredLaptops = laptops.slice(0, 3);
@@ -68,8 +69,8 @@ export function Home() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600">
-                  🔍
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
+                  <Search className="h-5 w-5 text-blue-600" />
                 </div>
                 <h3 className="mb-2 text-lg font-medium">Удобный поиск</h3>
                 <p className="text-muted-foreground">
@@ -78,8 +79,8 @@ export function Home() {
               </div>
               
               <div className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600">
-                  ⚖️
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
+                  <BarChart2 className="h-5 w-5 text-blue-600" />
                 </div>
                 <h3 className="mb-2 text-lg font-medium">Детальное сравнение</h3>
                 <p className="text-muted-foreground">
@@ -88,8 +89,8 @@ export function Home() {
               </div>
               
               <div className="rounded-lg bg-white p-6 shadow-sm dark:bg-gray-800">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600">
-                  💬
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100">
+                  <MessageSquare className="h-5 w-5 text-blue-600" />
                 </div>
                 <h3 className="mb-2 text-lg font-medium">Честные отзывы</h3>
                 <p className="text-muted-foreground">
